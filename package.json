@@ -24,8 +24,8 @@
   },
   "scripts": {
     "log": "auto-changelog && git add . && git ci -m ' 📖 DOC: Update the changelog' && git push",
-    "release": "release-it && npx vsce publish",
-    "release-major": "release-it major && npx vsce publish",
+    "release": "release-it",
+    "release-major": "release-it major",
     "release-dry": "release-it --dry-run"
   },
   "auto-changelog": {
