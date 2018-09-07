@@ -32,7 +32,7 @@ const dotFiles = [ '.editorconfig', '.eslintignore', '.eslintrc.js', '.gitignore
 // Start.
 console.log( '\n' ); // eslint-disable-line no-console
 const spinner = ora({ text: '' });
-spinner.start( ` 📦  Downloading WPGulp files → ${chalk.black.bgWhite( ` ${theCWD} ` )}\n` );
+spinner.start( ` 📦  Downloading WPGulp files → ${chalk.black.bgWhite( ` ${theCWD} ` )}` );
 
 // Download.
 Promise.all( filesToDownload.map( x => download( x, `${theCWD}` ) ) ).then( async() => {
@@ -40,6 +40,7 @@ Promise.all( filesToDownload.map( x => download( x, `${theCWD}` ) ) ).then( asyn
 	spinner.succeed();
 
 	// The npm install.
+	console.log( '\n' ); // eslint-disable-line no-console
 	spinner.start( ' 🚀  Installing npm packages' );
 	await execa( 'npm', [ 'install', '--silent' ]);
 	spinner.succeed();
