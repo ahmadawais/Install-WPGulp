@@ -1,0 +1,43 @@
+{
+  "name": "install-wpgulp",
+  "version": "1.0.0",
+  "description": "Installs WPGulp in a WordPress Theme/Plugin/App folder.",
+  "main": "index.js",
+  "keywords": [
+    "wpgulp",
+    "WordPress Gulp",
+    "Install WPGulp"
+  ],
+  "author": "Ahmad Awais <me@AhmadAwais.com> (https://AhmadAwais.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "download": "^7.1.0",
+    "execa": "^1.0.0",
+    "ora": "^3.0.0"
+  },
+  "devDependencies": {
+    "auto-changelog": "^1.8.0",
+    "eslint": "^5.5.0",
+    "eslint-config-wordpress": "^2.0.0",
+    "release-it": "^7.6.1"
+  },
+  "scripts": {
+    "log": "auto-changelog && git add . && git ci -m ' 📖 DOC: Update the changelog' && git push",
+    "release": "release-it && npx vsce publish",
+    "release-major": "release-it major && npx vsce publish",
+    "release-dry": "release-it --dry-run"
+  },
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "clTemplate.hbs",
+    "commitLimit": false,
+    "package": true,
+    "replaceText": {
+      "FIX: ": "",
+      "NEW: ": "",
+      "IMPROVE: ": "",
+      "DOC: ": ""
+    }
+  }
+}
