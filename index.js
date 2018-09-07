@@ -41,6 +41,7 @@ const major = semver[0];
 
 // If below Node 8.
 if ( 8 > major ) {
+	// eslint-disable-next-line  no-console
 	console.error(
 		chalk.red(
 			'You are running Node ' +

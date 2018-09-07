@@ -33,7 +33,7 @@
   },
   "auto-changelog": {
     "output": "CHANGELOG.md",
-    "template": "clTemplate.hbs",
+    "template": ".vscode/clTemplate.hbs",
     "commitLimit": false,
     "package": true,
     "replaceText": {
