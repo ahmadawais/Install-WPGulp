@@ -1,6 +1,6 @@
 {
   "name": "install-wpgulp",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Installs WPGulp in a WordPress Theme/Plugin/App folder.",
   "main": "index.js",
   "keywords": [
