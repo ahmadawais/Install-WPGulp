@@ -10,6 +10,18 @@ All notable changes in this project are documented in this file.
 
 <br>
 
+### RELEASE: [1.5.0](https://github.com/ahmadawais/Install-WPGulp/compare/1.4.0...1.5.0)
+
+![IMPROVEMENT](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
+
+> 👌 Instructions [`aab3772`](https://github.com/ahmadawais/Install-WPGulp/commit/aab377201fc8beca28d25f3a61393fcff311f00b) <br>
+
+<br>
+
+![hr](https://on.ahmda.ws/t6N5/c)
+
+<br>
+
 ### RELEASE: [1.4.0](https://github.com/ahmadawais/Install-WPGulp/compare/1.3.0...1.4.0)
 
 ![NEW](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
