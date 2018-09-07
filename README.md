@@ -26,8 +26,6 @@
     </tr>
 </table>
 
-# Install-WPGulp
-
  > 🚀  Installs WPGulp for you. Downloads all the required files and installs node packages. [Node >= 8 and npm >= 5.3].
 
 Read more about the [documentation or anything related to WPGulp →](https://github.com/ahmadawais/WPGulp)
