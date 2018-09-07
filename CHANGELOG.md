@@ -10,6 +10,22 @@ All notable changes in this project are documented in this file.
 
 <br>
 
+### RELEASE: [1.2.0](https://github.com/ahmadawais/Install-WPGulp/compare/1.1.0...1.2.0)
+
+![FIX](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
+
+> 🐛 VSXE is not required [`161f5bf`](https://github.com/ahmadawais/Install-WPGulp/commit/161f5bf91cd1f49491a0a7d51fcc3936573d6d09) <br>
+
+![DOCS](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Fix heading [`ddb5f54`](https://github.com/ahmadawais/Install-WPGulp/commit/ddb5f5415db6b1b5dbccd736e63af4d2ef1ba8fe) <br>
+
+<br>
+
+![hr](https://on.ahmda.ws/t6N5/c)
+
+<br>
+
 ### RELEASE: 1.1.0
 
 ![NEW](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
