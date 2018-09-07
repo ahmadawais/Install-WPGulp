@@ -36,7 +36,7 @@ module.exports = () => {
 	// Start.
 	console.log( '\n' ); // eslint-disable-line no-console
 	const spinner = ora({ text: '' });
-	spinner.start( ` 📦  Downloading WPGulp files → ${chalk.black.bgWhite( ` ${theDir} ` )}` );
+	spinner.start( ` 📦  Downloading WPGulp files inside the current directory → ${chalk.black.bgWhite( ` ${theDir} ` )}` );
 
 	// Download.
 	Promise.all( filesToDownload.map( x => download( x, `${theCWD}` ) ) ).then( async() => {
