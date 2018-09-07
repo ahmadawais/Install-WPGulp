@@ -10,11 +10,7 @@ All notable changes in this project are documented in this file.
 
 <br>
 
-### RELEASE: [2.0.0](https://github.com/ahmadawais/Install-WPGulp/compare/1.9.0...2.0.0)
-
-![NEW](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
-
-> 📦 WPGulp docs [`c4dce42`](https://github.com/ahmadawais/Install-WPGulp/commit/c4dce42d5be7d6ad592c92a88520d67cb73891d3) <br>
+### RELEASE: [2.0.0](https://github.com/ahmadawais/Install-WPGulp/compare/2.0.0...2.0.0)
 
 <br>
 
