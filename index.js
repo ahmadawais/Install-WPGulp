@@ -1,49 +1,69 @@
+#!/usr/bin/env node
 /**
- * Install WPGulp
+ * Main Install WPGulp app
+ *
+ * Check the node version if above 8 then run the app.
  */
 
-const fs = require( 'fs' );
-const theCWD = process.cwd();
-const ora = require( 'ora' );
-const execa = require( 'execa' );
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//   /!\ DO NOT MODIFY THIS FILE /!\
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// create-guten-block is installed globally on people's computers. This means
+// that it is extremely difficult to have them upgrade the version and
+// because there's only one global version installed, it is very prone to
+// breaking changes.
+//
+// The only job of create-guten-block is to init the repository and then
+// forward all the commands to the local version of create-guten-block.
+//
+// If you need to add a new command, please add it to the scripts/ folder.
+//
+// The only reason to modify this file is to add more warnings and
+// troubleshooting information for the `create-guten-block` command.
+//
+// Do not make breaking changes! We absolutely don't want to have to
+// tell people to update their global version of create-guten-block.
+//
+// Also be careful with new language features.
+// This file must work on Node 0.10+.
+//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//   /!\ DO NOT MODIFY THIS FILE /!\
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+'use strict';
+
 const chalk = require( 'chalk' );
-const download = require( 'download' );
-const handleError = require( './modules/handleError.js' );
-const clearConsole = require( './modules/clearConsole.js' );
-const printNextSteps = require( './modules/printNextSteps.js' );
+const currentNodeVersion = process.versions.node;
+const semver = currentNodeVersion.split( '.' );
+const major = semver[0];
 
-// Init.
-clearConsole();
+// If below Node 8.
+if ( 8 > major ) {
+	console.error(
+		chalk.red(
+			'You are running Node ' +
+				currentNodeVersion +
+				'.\n' +
+				'Install WPGulp requires Node 8 or higher. \n' +
+				'Kindly, update your version of Node.'
+		)
+	);
+	process.exit( 1 );
+}
 
-// Files.
-const filesToDownload = [
-	'https://raw.githubusercontent.com/ahmadawais/WPGulp/v2.0.0/src/.editorconfig',
-	'https://raw.githubusercontent.com/ahmadawais/WPGulp/v2.0.0/src/.eslintignore',
-	'https://raw.githubusercontent.com/ahmadawais/WPGulp/v2.0.0/src/.eslintrc.js',
-	'https://raw.githubusercontent.com/ahmadawais/WPGulp/v2.0.0/src/.gitignore',
-	'https://raw.githubusercontent.com/ahmadawais/WPGulp/v2.0.0/src/gulpfile.babel.js',
-	'https://raw.githubusercontent.com/ahmadawais/WPGulp/v2.0.0/src/package.json',
-	'https://raw.githubusercontent.com/ahmadawais/WPGulp/v2.0.0/src/wpgulp.config.js'
-];
-
-// Dotfiles (if any).
-const dotFiles = [ '.editorconfig', '.eslintignore', '.eslintrc.js', '.gitignore' ];
-
-// Start.
-console.log( '\n' ); // eslint-disable-line no-console
-const spinner = ora({ text: '' });
-spinner.start( ` 📦  Downloading WPGulp files → ${chalk.black.bgWhite( ` ${theCWD} ` )}\n` );
-
-// Download.
-Promise.all( filesToDownload.map( x => download( x, `${theCWD}` ) ) ).then( async() => {
-	dotFiles.map( x => fs.rename( `${theCWD}/${x.slice( 1 )}`, `${theCWD}/${x}`, err => handleError( err ) ) );
-	spinner.succeed();
-
-	// The npm install.
-	spinner.start( ' 🚀  Installing npm packages' );
-	await execa( 'npm', [ 'install', '--silent' ]);
-	spinner.succeed();
-
-	// Done.
-	printNextSteps();
+// Makes the script crash on unhandled rejections instead of silently
+// ignoring them. In the future, promise rejections that are not handled will
+// terminate the Node.js process with a non-zero exit code.
+process.on( 'unhandledRejection', err => {
+	throw err;
 });
+
+/**
+ * Run the entire program.
+ *
+ * Runs all the functions with async/await.
+ */
+const run = require( './modules/run' );
+run();
