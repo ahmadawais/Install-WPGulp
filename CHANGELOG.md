@@ -10,7 +10,37 @@ All notable changes in this project are documented in this file.
 
 <br>
 
-### RELEASE: [2.0.0](https://github.com/ahmadawais/Install-WPGulp/compare/2.0.0...2.0.0)
+### RELEASE: [2.1.0](https://github.com/ahmadawais/Install-WPGulp/compare/2.0.0...2.1.0)
+
+![NEW](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
+
+> 📦 master branch file for editorconfig [`0b4adfd`](https://github.com/ahmadawais/Install-WPGulp/commit/0b4adfdaa0c867f4d6efd3f455f4879d1fb3643e) <br>
+> 📦 master branch file for wpgulp config [`6a55058`](https://github.com/ahmadawais/Install-WPGulp/commit/6a55058cab60ecdf0ffcedf577b553d9e54ffd01) <br>
+> 📦 master branch file for pkg json [`71b8584`](https://github.com/ahmadawais/Install-WPGulp/commit/71b8584d5d363935e85224e14c7e0f30e8ed8c7f) <br>
+> 📦 master branch file for babel [`4694b03`](https://github.com/ahmadawais/Install-WPGulp/commit/4694b030c594c3181177ffeee4811a37ae5a9665) <br>
+> 📦 master branch file for gitignore [`0a4caec`](https://github.com/ahmadawais/Install-WPGulp/commit/0a4caec6f0be1bcb24b6f913713e63b58371cbdc) <br>
+> 📦 master branch file for eslint [`bbcd828`](https://github.com/ahmadawais/Install-WPGulp/commit/bbcd8286f9819b1e46bd16b68a9451e1a460cd29) <br>
+> 📦 master branch file for elsintignore [`935821b`](https://github.com/ahmadawais/Install-WPGulp/commit/935821bb5fbf3e5ab6509f0c13ae094f17291387) <br>
+
+![IMPROVEMENT](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
+
+> 👌 master files [`277fb2b`](https://github.com/ahmadawais/Install-WPGulp/commit/277fb2bc0824c197465dbacb78ce46e7948600c0) <br>
+
+![DOCS](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+>  📖 Update the changelog [`6e0746d`](https://github.com/ahmadawais/Install-WPGulp/commit/6e0746d734183b4debb065ca3b36381da9df649c) <br>
+
+<br>
+
+![hr](https://on.ahmda.ws/t6N5/c)
+
+<br>
+
+### RELEASE: [2.0.0](https://github.com/ahmadawais/Install-WPGulp/compare/1.9.0...2.0.0)
+
+![NEW](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
+
+> 📦 WPGulp docs [`c4dce42`](https://github.com/ahmadawais/Install-WPGulp/commit/c4dce42d5be7d6ad592c92a88520d67cb73891d3) <br>
 
 <br>
 
