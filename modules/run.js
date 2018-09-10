@@ -21,13 +21,7 @@ module.exports = () => {
 
 	// Files.
 	const filesToDownload = [
-		'https://raw.githubusercontent.com/ahmadawais/WPGulp/v2.0.0/src/.editorconfig',
-		'https://raw.githubusercontent.com/ahmadawais/WPGulp/v2.0.0/src/.eslintignore',
-		'https://raw.githubusercontent.com/ahmadawais/WPGulp/v2.0.0/src/.eslintrc.js',
-		'https://raw.githubusercontent.com/ahmadawais/WPGulp/v2.0.0/src/.gitignore',
-		'https://raw.githubusercontent.com/ahmadawais/WPGulp/v2.0.0/src/gulpfile.babel.js',
-		'https://raw.githubusercontent.com/ahmadawais/WPGulp/v2.0.0/src/package.json',
-		'https://raw.githubusercontent.com/ahmadawais/WPGulp/v2.0.0/src/wpgulp.config.js'
+		'https://raw.githubusercontent.com/ahmadawais/WPGulp/master/src/.editorconfig',
 	];
 
 	// Dotfiles (if any).
