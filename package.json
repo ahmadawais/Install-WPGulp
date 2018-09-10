@@ -2,6 +2,10 @@
   "name": "install-wpgulp",
   "version": "2.2.0",
   "description": "Installs WPGulp in a WordPress Theme/Plugin/App folder.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmadawais/Install-WPGulp"
+  },
   "main": "index.js",
   "bin": {
     "install-wpgulp": "./index.js"
