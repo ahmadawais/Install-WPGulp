@@ -27,6 +27,7 @@ module.exports = () => {
 		'https://raw.githubusercontent.com/ahmadawais/WPGulp/master/src/.gitignore',
 		'https://raw.githubusercontent.com/ahmadawais/WPGulp/master/src/gulpfile.babel.js',
 		'https://raw.githubusercontent.com/ahmadawais/WPGulp/master/src/package.json',
+		'https://raw.githubusercontent.com/ahmadawais/WPGulp/master/src/wpgulp.config.js'
 	];
 
 	// Dotfiles (if any).
