@@ -21,13 +21,13 @@ module.exports = () => {
 
 	// Files.
 	const filesToDownload = [
-		'https://raw.githubusercontent.com/ahmadawais/WPGulp/src/.editorconfig',
-		'https://raw.githubusercontent.com/ahmadawais/WPGulp/src/.eslintignore',
-		'https://raw.githubusercontent.com/ahmadawais/WPGulp/src/.eslintrc.js',
-		'https://raw.githubusercontent.com/ahmadawais/WPGulp/src/.gitignore',
-		'https://raw.githubusercontent.com/ahmadawais/WPGulp/src/gulpfile.babel.js',
-		'https://raw.githubusercontent.com/ahmadawais/WPGulp/src/package.json',
-		'https://raw.githubusercontent.com/ahmadawais/WPGulp/src/wpgulp.config.js'
+		'https://raw.githubusercontent.com/ahmadawais/WPGulp/master/src/.editorconfig',
+		'https://raw.githubusercontent.com/ahmadawais/WPGulp/master/src/.eslintignore',
+		'https://raw.githubusercontent.com/ahmadawais/WPGulp/master/src/.eslintrc.js',
+		'https://raw.githubusercontent.com/ahmadawais/WPGulp/master/src/.gitignore',
+		'https://raw.githubusercontent.com/ahmadawais/WPGulp/master/src/gulpfile.babel.js',
+		'https://raw.githubusercontent.com/ahmadawais/WPGulp/master/src/package.json',
+		'https://raw.githubusercontent.com/ahmadawais/WPGulp/master/src/wpgulp.config.js'
 	];
 
 	// Dotfiles (if any).
