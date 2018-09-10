@@ -22,6 +22,7 @@ module.exports = () => {
 	// Files.
 	const filesToDownload = [
 		'https://raw.githubusercontent.com/ahmadawais/WPGulp/master/src/.editorconfig',
+		'https://raw.githubusercontent.com/ahmadawais/WPGulp/master/src/.eslintignore',
 	];
 
 	// Dotfiles (if any).
